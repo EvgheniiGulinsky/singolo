@@ -1,0 +1,47 @@
+*{
+    font-family: 'Lato';
+    margin: 0;
+    max-width:  1020px;
+}
+.quote{
+    background: #f06c64;
+    color: white;
+    padding-top: 70px;
+    padding-left: 40PX;
+    height: 654px;
+    box-sizing: border-box;
+}
+.footer{
+    background: #2D303A;
+    height: 77px;
+}
+.forms{
+    display: flex;
+    flex-direction: column;
+}
+.quote__title{
+    letter-spacing: 0.2px;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 18px;
+
+}
+.quote__wrapper{
+    display:flex;
+}
+.quote__info--contacts__info{
+    display: flex;
+}
+.footer__items{
+    display: inline-block;
+    padding-top: 33px;
+    padding-left: 42px;
+}
+.buttons{
+    float: right;
+    padding-top: 22px;
+    padding-right: 40px;
+}
+.buttons *{
+    margin-left: 4px;
+}

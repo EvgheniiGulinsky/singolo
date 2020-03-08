@@ -45,6 +45,10 @@ nav{
     transition: 0.2s linear;
     color: #f06c64;
 }
+.navigation :first-child:hover{
+    transition: 0.2s linear;
+    color: white;   
+}
 .dot{
     color: #494e62;
     margin-right:  14px;
@@ -101,6 +105,7 @@ nav{
     top: 376px;
     left: 42px;
     opacity: 0;   
+    cursor: pointer;
 }
 #Arrow_Black_Right{
     position: absolute;
@@ -108,6 +113,7 @@ nav{
     left: 964px;
     transform: rotate(180deg);
     opacity: 0; 
+    cursor: pointer;
 }
 #Horizontal-Screen{
     position: absolute;
