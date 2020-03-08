@@ -8,7 +8,7 @@ body{
 header{
     background-color: #2D303A;
     display: flex;
-    max-height: 95px;
+    height: 95px;
     box-sizing: border-box;
     padding-top: 23px;
     padding-bottom: 35px;
@@ -24,6 +24,7 @@ header{
     text-decoration: none;
     color: #ffffff;
     text-transform: uppercase;
+    padding-top:  18px;
 }
 nav{
     display: flex; 
@@ -158,7 +159,7 @@ nav{
     font-weight: 900;
     text-align: left;
 }
-article{
+.service_article{
     padding-top: 28px;
     width: 940px;
     height: 57px;
@@ -204,7 +205,7 @@ article{
     grid-gap: 19px;
     grid-row-gap: 24px;
     position: relative;
-    top: 5px;
+    top: 20px;
     left: 0px;
 }
 .feature{
@@ -213,7 +214,10 @@ article{
     grid-gap: 10px;
 }
 .feature img{
-    padding-top: 17px;
+    padding-top: 4px;
     grid-column: 1 / 2;
     grid-row: 1 / 3; 
+}
+.feature .title{
+    letter-spacing: 0.5px;
 }
