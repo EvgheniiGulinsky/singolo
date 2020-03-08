@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>singolo 3</title>
     <link rel="stylesheet" href="singolo3.css">
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="quote">
@@ -13,11 +15,11 @@
     <div class="quote__wrapper">
         <form action="" class="quote__form">
             <div class="forms">
-                <input type="text" name="name" id="name" placeholder="Name(Required)" pattern="[A-Za-z]" >
-                <input type="email" name="email" id="email" placeholder="Email(Required)" >
+                <input type="text" name="name" id="name" placeholder="Name(Required)" required pattern="[A-Za-z ]+" >
+                <input type="email" name="email" id="email" placeholder="Email(Required)" required >
                 <input type="text" name="subject" id="subject" placeholder="Subject">
                 <input type="text" name="describe" id="describe" placeholder="Describe your project in detail">
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit" id="submit">
             </div>
         </form>
             <div class="quote__info">
@@ -25,15 +27,15 @@
                 <div class="quote__info--text">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</div>
                 <div class="quote__info--contacts">
                     <div class="quote__info--contacts__info">
-                        <img src="./assets/location-icon.png" alt="addres" >
-                        <h3> Elm St. 14/05 Lost City </h3>
+                        <img src="./assets/location--icon.png" alt="addres" class="contact" >
+                        <h3 class="broken">   Elm St. 14/05 Lost City </h3>
                     </div>
                     <div class="quote__info--contacts__info">
-                        <img src="./assets/phone-icon.png" alt="phone" >
+                        <img src="./assets/phone--icon.png" alt="phone" class="contact phone " >
                         <h3> 03528 331 86 35 </h3>
                     </div>
                     <div class="quote__info--contacts__info">
-                        <img src="./assets/mail-icon.png" alt="mail" >
+                        <img src="./assets/mail--icon.png" alt="mail" class="contact mail">
                         <h3> info@singolo.com </h3>
                     </div>
                 </div>
@@ -41,7 +43,7 @@
     </div>
     </div>
     <footer class="footer">
-        <img src="./assets/Copyright.png" alt="Copyright" class="footer__items copyright">
+        <p class="footer__items copyright">© Copyright 2013</p>
         <div class="footer__items buttons">                    
             <img src="./assets/Facebook.png" alt="">
             <img src="./assets/Google.png" alt="">

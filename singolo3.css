@@ -6,7 +6,7 @@
 .quote{
     background: #f06c64;
     color: white;
-    padding-top: 70px;
+    padding-top: 68px;
     padding-left: 40PX;
     height: 654px;
     box-sizing: border-box;
@@ -24,18 +24,112 @@
     font-size: 30px;
     font-weight: 900;
     line-height: 18px;
-
+    margin-bottom: 27px;
+}
+.quote__article{
+    font-size: 18px;
+    line-height: 30px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+    margin-bottom: 44px;
+    letter-spacing: -0.07px;
 }
 .quote__wrapper{
     display:flex;
 }
+.quote__info{
+margin-left: 21px;
+width:300px;
+}
+.quote__info--title{
+    font-size: 18px;
+    line-height: 18px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    margin-bottom: 10px;
+    letter-spacing: 0.25px;
+}
+.quote__info--text{
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 20px;
+}
 .quote__info--contacts__info{
     display: flex;
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+}
+.contact{
+    margin: auto 0;
+}
+.phone{
+    margin-top: 5px;
+    margin-left: -2px;
+}
+.mail{
+    margin-top: 8px;
+    margin-left: -3px;
+}
+.quote__info--contacts{
+    margin-left: 3px;
+}
+.quote__info--contacts__info h3{
+    margin-left: 10px;
+}
+.broken{
+    margin-left: 12px !important
+}
+.forms input{
+    width: 619px;
+    height: 38px;
+    border-radius: 5px;
+    background-color: #d6564f;
+    border: none;
+    padding-left: 15px;
+    padding-bottom: 0px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+.forms input::placeholder{
+    font-size: 12px;
+    line-height: 22px;
+    color: #f48c8f;
+    font-weight: 400;
+    text-align: left;
+}
+
+.forms #describe{
+    height: 202px;
+    padding-bottom: 165px;
+    box-sizing: border-box;
+}
+#submit{
+    background: rgb(166, 55, 55);
+    cursor: pointer
 }
 .footer__items{
     display: inline-block;
-    padding-top: 33px;
+    padding-top: 30px;
     padding-left: 42px;
+}
+
+.copyright{
+    font-size: 12px;
+    color: #5E657E;
+    letter-spacing: -0.2px;
+    margin-top: 2px;
 }
 .buttons{
     float: right;
@@ -43,5 +137,6 @@
     padding-right: 40px;
 }
 .buttons *{
-    margin-left: 4px;
+    margin-left: 5px;
+    cursor: pointer
 }
