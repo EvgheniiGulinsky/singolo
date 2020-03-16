@@ -10,36 +10,48 @@
     <title>Singolo1</title>
 </head>
 <body>
+    
+    <div class="anchor" id="home"></div>
         <header>
             <div class="Logo">
                 <h1><a class="logo__link">SINGOLO</a></h1>
             </div>
             <nav class='navigation'>
-                    <a href="" ><font color='#F06C64'>HOME</font></a>
+                    <a href="#home" class="active" >HOME</a>
                     <h2 class='dot'>·</h2>
-                    <a href="">SERVICES</a>
+                    <a href="#services">SERVICES</a>
                     <h2 class='dot'>·</h2>
-                    <a href="">PORTFOLIO</a>
+                    <a href="#portfolio">PORTFOLIO</a>
                     <h2 class='dot'>·</h2>
-                    <a href="">ABOUT</a>
+                    <a href="#about-us">ABOUT</a>
                     <h2 class='dot'>·</h2>
-                    <a href="">CONTACT</a>
+                    <a href="#contact">CONTACT</a>
             </nav>
         </header>
         <main>
             <div class="slider">
-                <img src="./assets/Arrow.png" alt="" id='Arrow-left'> 
-                <img src="./assets/Base.png" alt="" id="vertical">
-                <img src="./assets/Vertical-Screen.png" alt="" id="Vertical-Screen"> 
-                <img src="./assets/Base.png" alt="" id="horizontal">
-                <img src="./assets/Horizontal-Screen.png" alt="" id='Horizontal-Screen'>
-                <img src="./assets/Arrow.png" alt="" id='Arrow-right'>
+                <div class="slide2"><img src="./assets/slide2.png" alt="" srcset=""></div>
+                <div class="slider__buttons">
+                    <img src="./assets/Arrow.png" alt="" id='Arrow-left'> 
+                    <img src="./assets/Arrow.png" alt="" id='Arrow-right'>
+                    <img src="./assets/Arrow_black.png" alt="" id="Arrow_Black_Left">
+                    <img src="./assets/Arrow_black.png" alt="" id="Arrow_Black_Right">
+                </div>  
+                <div class="slide1">
+                <div class="vertical">
+                    <img src="./assets/Base.png" alt="" id="vertical">
+                    <img src="./assets/Vertical-Screen.png" alt="" id="Vertical-Screen"> 
+                </div>
+                <div class="horizontal">
+                    <img src="./assets/Base.png" alt="" id="horizontal">
+                    <img src="./assets/Horizontal-Screen.png" alt="" id='Horizontal-Screen'>
+                </div>
                 <img src="./assets/Shadow.png" alt="" id='Shadow-Vertical'>
                 <img src="./assets/Shadow.png" alt="" id='Shadow-horizontal'>
-                <img src="./assets/Arrow_black.png" alt="" id="Arrow_Black_Left">
-                <img src="./assets/Arrow_black.png" alt="" id="Arrow_Black_Right">
+            </div>
+
             </div>   
-            <div class="services">
+            <div class="services" id="services">
                 <div class="container">
                     <h1>Our Services</h1>
                     <article class="service_article">
@@ -86,11 +98,11 @@
                 </div>
             </div>
         </main>
-        <div class="portfolio">
+        <div class="portfolio" id="portfolio">
             <h1 class="portfolio__title">Portfolio</h1>
             <div class="portfolio__article">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</div>
             <div class="portfolio__buttons">
-                <input type="button" value="All" id="all">
+                <input type="button" value="All" id="all" class="activetab">
                 <input type="button" value="Web Design" id="graphic">
                 <input type="button" value="Graphic Design" id="web">
                 <input type="button" value="Artwork" id="artwork">
@@ -110,7 +122,7 @@
                 <img src="./assets/12.png" alt="12">
             </div>
         </div>
-        <div class="about-us">
+        <div class="about-us" id="about-us">
             <div class="about-us__title">About Us</div>
             <div class="about-us__article">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis,zzzzz non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh</div>
             <div class="about-us__grid">
@@ -153,7 +165,7 @@
                 </div>
         </div>
         </div>
-        <div class="quote">
+        <div class="quote" id="contact">
             <h1 class="quote__title">Get a Quote</h1>
             <article class="quote__article">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</article>
         <div class="quote__wrapper">
@@ -195,5 +207,6 @@
                 <img src="./assets/LinkedIn.png" alt="">
             </div>
         </footer>
+        <script src="script.js"></script>
 </body>
 </html>

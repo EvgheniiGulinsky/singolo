@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Lato';
     margin: 0;
@@ -5,6 +8,9 @@ body{
     max-width:  1020px;
 }
 header{
+    position: sticky;
+    top: 0px;
+    z-index: 999;
     background-color: #2D303A;
     display: flex;
     height: 95px;
@@ -45,13 +51,12 @@ nav{
     font-weight: 600;
     letter-spacing: -0.2px;
 }
+.navigation a.active{
+    color: #f06c64;
+}
 .navigation a:hover{
     transition: 0.2s linear;
     color: #f06c64;
-}
-.navigation :first-child:hover{
-    transition: 0.2s linear;
-    color: white;   
 }
 .dot{
     color: #494e62;
@@ -72,7 +77,6 @@ nav{
     background-color:  #f06c64 ;
     align-items: center;
     z-index: 1;
-    border-bottom: 16px solid #ea676b;
 }
 #horizontal{
     top: 269px;
@@ -143,6 +147,9 @@ nav{
     left: 547px;
     transform: rotateY(180deg) rotateZ(-90deg);
     z-index: 2;
+}
+.slide2{
+    opacity: 0;
 }
 
 /*        Services           */
@@ -239,6 +246,9 @@ nav{
     margin-bottom: 5px;
     overflow: hidden;
 }
+.portfolio__grid img{
+transition: all 0.3s ease-in-out;
+}
 .portfolio__buttons input{
     font-size: 12px;
     line-height: 22px;
@@ -261,14 +271,15 @@ nav{
     color:#c5c5c5;
     border-color: #c5c5c5;
 }
-.portfolio__buttons :first-child{
-    color:#c5c5c5;
-    border-color: #c5c5c5;
-}
 .portfolio__buttons :first-child:hover{
     transition: 0.2s linear;
     color:#767e9e;
     border-color: #767e9e;
+}
+.activetab{
+    transition: 0.2s!important ;  
+    color:#c5c5c5!important;
+    border-color: #c5c5c5!important;
 }
 .portfolio__title{
     font-size: 30px;
@@ -293,6 +304,12 @@ nav{
 .portfolio__buttons{
     margin-bottom: 20px;
     margin-left: 1px;
+}
+.bordered{
+    border: 5px #F06C64 solid;
+    box-sizing: border-box;
+    width: 220px;
+    height: 187px;
 }
 .about-us{
     height: 592px;
