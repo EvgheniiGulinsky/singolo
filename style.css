@@ -83,9 +83,12 @@ nav{
     position: relative;
     display: flex;
     height: 600px;
-    background-color:  #f06c64 ;
+    background:  #2d303a ;
     align-items: center;
     z-index: 1;
+}
+.slider container{
+    background: #f06c64;
 }
 #horizontal{
     top: 174px;
@@ -549,8 +552,9 @@ width:300px;
     display:none;
 }
 .modal__content{
-    background: white;
+    background: #f06c64;
     margin:15% auto;
+    color: white;
     border: 1px black solid;
     width: 10%;
     padding: 30px 40px;
@@ -558,9 +562,10 @@ width:300px;
     overflow: hidden;
 }
 #closeModal{
-    color: #aaa;
+    color: black;
     float:right;
     margin-top: -10px;
+    
 }
 
 
@@ -628,3 +633,65 @@ width:300px;
     position: absolute;
     left: 110%;
 }
+
+@media (min-width: 768px) and (max-width: 1019px) {
+    .content{
+        width: 768px;
+        overflow: hidden;
+    }
+    container{
+        width: 768px;
+        overflow: hidden;
+    }
+    .services{
+        height: 584px;
+    }
+    .features{
+        grid-template: 100px 100px 100px / 300px 300px;
+        grid-gap: 115px;
+        grid-row-gap: 24px;
+    }
+    .portfolio{
+        height: 1037px;
+    }
+    .portfolio__grid{
+        grid-template: 187px 187px 187px 187px / repeat(3,220px);
+    }
+    .about-us__grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .about-us__cardphoto{
+        width: 100%;
+    }
+    .forms input{
+        width: 519px;
+    }
+    .slide2 img{
+        width: 100%;
+        margin-top: 10%;
+    }
+
+}
+@media (min-width: 375px) and (max-width: 768px) {
+    .content{
+        width: 375px;
+        overflow: hidden;
+    }
+    container{
+        width: 375px;
+        overflow: hidden;
+    }
+    
+
+}
+@media (max-width: 375px) {
+    .content{
+        width: 350px;
+        overflow: hidden;
+    }
+    container{
+        width: 350px;
+        overflow: hidden;
+    }
+}
+

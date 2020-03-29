@@ -7,7 +7,7 @@ function selectActiveLink (){
 
 const $slide1 = document.getElementsByClassName("slide1")[0];
 const $slide2 = document.querySelector(".slide2 img");
-const $slider = document.getElementsByClassName("slider")[0]; 
+const $slider = document.querySelector(".slider container"); 
 const $modalClose = document.getElementById("closeModal")
 const $modalOpen = document.getElementById("submit")
 const $modal = document.getElementsByClassName("modal")[0]
@@ -38,7 +38,7 @@ function changeSlideLeft(){
     slideArray[i%2].classList.remove("left2")
     slideArray[i%2].classList.remove("right2")
     slideArray[i%2].classList.add("left1")
-    slideArray[i%2].addEventListener("animationend", 
+    slideArray[i%2].addEventListener("animationstart", 
     () => $slider.style.background=colorArray[i%2])
     i++
     slideArray[i%2].classList.remove("left1")
@@ -46,10 +46,11 @@ function changeSlideLeft(){
     slideArray[i%2].classList.add("left2")
 }
 function changeSlideRight(){
+    
     slideArray[i%2].classList.remove("left2")
     slideArray[i%2].classList.remove("right2")
     slideArray[i%2].classList.add("right1")
-    slideArray[i%2].addEventListener("animationend", 
+    slideArray[i%2].addEventListener("animationstart", 
     () =>{ let j =i+1;  $slider.style.background=colorArray[j%2]})
     i++
     slideArray[i%2].classList.remove("left1")
@@ -130,7 +131,7 @@ $modalClose.addEventListener("click",function (){ $modal.style.display="none"
 $form.reset()
 $description.innerHTML=``
 $subject.innerHTML=``} )
-$modal.onclick = (event) => {if (event.traget!==$modalContent) $modal.style.display="none"
+$modal.onclick = (event) => {if (event.target==$modal ) {$modal.style.display="none"
 $form.reset()
 $description.innerHTML=`No subject`
-$subject.innerHTML=`No description`} 
+$subject.innerHTML=`No description`} }
