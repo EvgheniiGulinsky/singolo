@@ -5,21 +5,31 @@ body{
     font-family: 'Lato';
     margin: 0;
     padding: 0;
-    max-width:  1020px;
 }
 header{
     position: sticky;
     top: 0px;
     z-index: 999;
     background-color: #2D303A;
-    display: flex;
     height: 95px;
     box-sizing: border-box;
-    padding-top: 23px;
-    padding-bottom: 35px;
-    padding-left: 40px;
-    padding-right: 40px;
     border-bottom: 6px solid #323746;
+}
+container{
+    position: relative;
+    box-sizing: border-box;
+    width: 1020px;
+    height: 100%;
+    margin: auto;
+    padding: 0 40px;
+    overflow:hidden 
+}
+header container{
+    display: flex;
+    align-items: center;
+}
+.Logo{
+    margin: 0;
 }
 .Logo h1{
     font-size: 25px;
@@ -29,7 +39,6 @@ header{
     text-decoration: none;
     color: #ffffff;
     text-transform: uppercase;
-    padding-top:  18px;
 }
 .logo__link::after{
     content:"*";
@@ -40,7 +49,6 @@ nav{
     width: 371px; 
     margin-left: auto;
     justify-self: end;
-    margin-top: 23px;
 }
 .navigation a{
     color: white;
@@ -72,14 +80,15 @@ nav{
 /*      Slider       */
 
 .slider{
+    position: relative;
     display: flex;
-    height: 584px;
+    height: 600px;
     background-color:  #f06c64 ;
     align-items: center;
     z-index: 1;
 }
 #horizontal{
-    top: 269px;
+    top: 174px;
     left: 425px;
     position: absolute;
     z-index: 3;
@@ -87,18 +96,18 @@ nav{
 #vertical{
     position: absolute;
     transform: rotate(-90deg);
-    top: 269px;
-    left: -9px; 
+    top: 174px;
+    left: -10px;
     z-index: 3;
 }
 #Arrow-right{
     position: absolute;
-    top: 376px;
+    top: 280px;
     left: 964px;
 }
 #Arrow-left{
     position: absolute;
-    top: 376px;
+    top: 280px;
     left: 42px;
     transform: rotate(180deg);
 }
@@ -110,14 +119,14 @@ nav{
 }
 #Arrow_Black_Left{
     position: absolute;
-    top: 376px;
+    top: 280px;
     left: 42px;
     opacity: 0;   
     cursor: pointer;
 }
 #Arrow_Black_Right{
     position: absolute;
-    top: 376px;
+    top: 280px;
     left: 964px;
     transform: rotate(180deg);
     opacity: 0; 
@@ -125,43 +134,49 @@ nav{
 }
 #Horizontal-Screen{
     position: absolute;
-    top: 280px;
+    top: 185px;
     left: 482px;
     z-index: 3;
 }
 #Vertical-Screen{
     position: absolute;
-    top: 210px;
+    top: 115px;
     left: 123px;
     z-index: 3;
 }
 #Shadow-Vertical{
     position: absolute;
-    top: 147px;
+    top: 52px;
     left: 112px;
     z-index: 2;
 }
 #Shadow-horizontal{
     position: absolute;
-    top: 147px;
+    top: 51px;
     left: 547px;
     transform: rotateY(180deg) rotateZ(-90deg);
     z-index: 2;
 }
 .slide2{
-    opacity: 0;
+    position: relative
 }
 
 /*        Services           */
 
 .services{
-    width: 1020px;
     height: 493px;
     background-color: #f2f2f2;
     border-bottom: 6px solid #ffffff;
 }
+.content{
+    width: 1020px;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 40px 40px;
+    overflow: hidden;  
+}
 .services h1{
-    margin: 0;
+    margin-top: 28px;
     font-size: 30px;
     line-height: 18px;
     color: #666d89;
@@ -180,12 +195,6 @@ nav{
     font-weight: 300;
     text-align: justify;
     letter-spacing: -0.08px;
-}
-.container{
-    width: 939px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 67px;
 }
 .title{
     font-size: 18px;
@@ -229,13 +238,13 @@ nav{
     grid-row: 1 / 3; 
 }
 .feature .title{
+    margin: 0;
     letter-spacing: 0.5px;
 }
 .portfolio{
-    padding: 70px 40px;
     background: #2d303a;
     color: #666d89;
-    max-height: 724px;
+    height: 863px;
     border-bottom: #323746 6px solid;
 }
 .portfolio__grid{
@@ -282,6 +291,7 @@ transition: all 0.3s ease-in-out;
     border-color: #c5c5c5!important;
 }
 .portfolio__title{
+    margin-top: 28px;
     font-size: 30px;
     line-height: 18px;
     color: #666d89;
@@ -312,12 +322,13 @@ transition: all 0.3s ease-in-out;
     height: 187px;
 }
 .about-us{
-    height: 592px;
+    height: 731px;
     background: #f2f2f2;
-    padding: 68px 40px;
     border-bottom: 5px solid #ffffff;
 }
+
 .about-us__title{
+    margin-top: 20px;
     font-size: 29px;
     line-height: 18px;
     color: #666d89;
@@ -353,6 +364,7 @@ transition: all 0.3s ease-in-out;
     margin-bottom:16px;
 }
 .about-us__cardname{
+    margin: 0;
     margin-bottom: 11px;
     font-size: 18px;
     line-height: 18px;
@@ -371,6 +383,9 @@ transition: all 0.3s ease-in-out;
     font-weight: 400;
     text-align: justify;
 }
+.about-us__cardbuttons{
+    margin: 0;
+}
 .about-us__cardbuttons *{
     cursor: pointer;
     margin-right: 5px;
@@ -383,8 +398,6 @@ transition: all 0.3s ease-in-out;
 .quote{
     background: #f06c64;
     color: white;
-    padding-top: 68px;
-    padding-left: 40PX;
     height: 654px;
     box-sizing: border-box;
 }
@@ -501,7 +514,9 @@ width:300px;
     padding-top: 30px;
     padding-left: 42px;
 }
-
+.footer .content{
+    padding: 0;
+}
 .copyright{
     font-size: 12px;
     color: #5E657E;
@@ -521,4 +536,95 @@ width:300px;
 .buttons *:hover{
     transition: 0.2s linear;
     opacity: 1;
+}
+
+.modal{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,0.8);
+    left: 0;
+    top: 0;
+    overflow:auto;
+    display:none;
+}
+.modal__content{
+    background: white;
+    margin:15% auto;
+    border: 1px black solid;
+    width: 10%;
+    padding: 30px 40px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+#closeModal{
+    color: #aaa;
+    float:right;
+    margin-top: -10px;
+}
+
+
+@keyframes left1 {
+    from {
+      left: 0;
+    }
+    to {
+      left: -150%;
+    }
+  }
+
+@keyframes left2 {
+      from {
+        left: 150%;
+      }
+      to {
+        left: 0%;
+      }
+    }
+  
+  @keyframes right1 {
+    from {
+        left: -150%;
+      }
+      to {
+          left: 0%;
+      }
+
+}
+    @keyframes right2 {
+        from {
+            left: 0%;
+          }
+          to {
+            left: 150%;
+          }
+  }
+  
+.left1{
+      animation-name: left1;
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards;
+}
+.left2{
+    animation-name: left2;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+.right1{
+    animation-name: right1;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+.right2{
+    animation-name: right2;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.slide1{
+    position: relative;
+}
+.slide2 img{
+    position: absolute;
+    left: 110%;
 }

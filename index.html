@@ -13,23 +13,26 @@
     
     <div class="anchor" id="home"></div>
         <header>
+            <container>
             <div class="Logo">
                 <h1><a class="logo__link">SINGOLO</a></h1>
             </div>
             <nav class='navigation'>
-                    <a href="#home" class="active" >HOME</a>
+                    <a href="#home" class="active" id="homeLink" >HOME</a>
                     <h2 class='dot'>·</h2>
-                    <a href="#services">SERVICES</a>
+                    <a href="#services" id="serviceLink">SERVICES</a>
                     <h2 class='dot'>·</h2>
-                    <a href="#portfolio">PORTFOLIO</a>
+                    <a href="#portfolio" id="portfolioLink">PORTFOLIO</a>
                     <h2 class='dot'>·</h2>
-                    <a href="#about-us">ABOUT</a>
+                    <a href="#about-us" id="aboutLink">ABOUT</a>
                     <h2 class='dot'>·</h2>
-                    <a href="#contact">CONTACT</a>
+                    <a href="#contact" id="contactLink">CONTACT</a>
             </nav>
+        </container>   
         </header>
         <main>
             <div class="slider">
+                <container>
                 <div class="slide2"><img src="./assets/slide2.png" alt="" srcset=""></div>
                 <div class="slider__buttons">
                     <img src="./assets/Arrow.png" alt="" id='Arrow-left'> 
@@ -41,18 +44,18 @@
                 <div class="vertical">
                     <img src="./assets/Base.png" alt="" id="vertical">
                     <img src="./assets/Vertical-Screen.png" alt="" id="Vertical-Screen"> 
+                    <img src="./assets/Shadow.png" alt="" id='Shadow-Vertical'>
                 </div>
                 <div class="horizontal">
                     <img src="./assets/Base.png" alt="" id="horizontal">
                     <img src="./assets/Horizontal-Screen.png" alt="" id='Horizontal-Screen'>
-                </div>
-                <img src="./assets/Shadow.png" alt="" id='Shadow-Vertical'>
                 <img src="./assets/Shadow.png" alt="" id='Shadow-horizontal'>
+                </div>
             </div>
-
+        </container>
             </div>   
             <div class="services" id="services">
-                <div class="container">
+                <div class="content">
                     <h1>Our Services</h1>
                     <article class="service_article">
                         Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
@@ -99,6 +102,7 @@
             </div>
         </main>
         <div class="portfolio" id="portfolio">
+            <div class="content">
             <h1 class="portfolio__title">Portfolio</h1>
             <div class="portfolio__article">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</div>
             <div class="portfolio__buttons">
@@ -122,7 +126,9 @@
                 <img src="./assets/12.png" alt="12">
             </div>
         </div>
+        </div>
         <div class="about-us" id="about-us">
+            <div class="content">
             <div class="about-us__title">About Us</div>
             <div class="about-us__article">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis,zzzzz non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh</div>
             <div class="about-us__grid">
@@ -164,8 +170,10 @@
 
                 </div>
         </div>
+    </div>
         </div>
         <div class="quote" id="contact">
+            <div class="content">
             <h1 class="quote__title">Get a Quote</h1>
             <article class="quote__article">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</article>
         <div class="quote__wrapper">
@@ -197,8 +205,10 @@
                     </div>
                 </div>
         </div>
+    </div>
         </div>
         <footer class="footer">
+            <div class="content">
             <p class="footer__items copyright">© Copyright 2013</p>
             <div class="footer__items buttons">                    
                 <img src="./assets/Facebook.png" alt="">
@@ -206,7 +216,17 @@
                 <img src="./assets/Twitter.png" alt="">
                 <img src="./assets/LinkedIn.png" alt="">
             </div>
+        </div>
         </footer>
+        <div class="modal">
+            <div class="modal__content"> 
+               <p> The letter was sent</p>
+               <p class="modal__subject">No subject</p>
+               <p class="modal__description">No description</p>
+                <input type="button" value="Close" id="closeModal">
+            </div>
+           
+        </div>
         <script src="script.js"></script>
 </body>
 </html>
